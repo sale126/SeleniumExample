@@ -152,7 +152,7 @@ public void verifyAdProductToCart(){
     loginPage.login(username, password);
     homePage.clickProducttoCartfromHomePage();
     homePage.navigateToCart();
-    cartPage.verifyThatProductIsInChar();
+    cartPage.verifyThatProductIsInCart();
   
 }
 @Test
@@ -167,7 +167,7 @@ public void verifyRemoveProductFromCart(){
     homePage.clickProducttoCartfromHomePage();
     homePage.clickRemovefromHomePage();
     homePage.navigateToCart();
-    cartPage.verifyThatProductIsNotCar();
+    cartPage.verifyThatProductIsNotInCart();
 
 }
 @Test
@@ -183,7 +183,7 @@ public void verifyAdProductFromPdp(){
     homePage.goToPdp();
     pdp.clickAddProductfromPDP();
     homePage.navigateToCart();
-    cartPage.verifyThatProductIsInChar();
+    cartPage.verifyThatProductIsInCart();
 }
 @Test
 public void verifyRemoveProductFromPDP(){
@@ -198,11 +198,7 @@ public void verifyRemoveProductFromPDP(){
     homePage.goToPdp();
     pdp.clickAddProductfromPDP();
     pdp.clickRemovefromPDP();
-    cartPage.verifyThatProductIsNotCar();
-
-
-
-
+    cartPage.verifyThatProductIsNotInCart();
 }
 
 
